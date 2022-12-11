@@ -27,7 +27,7 @@ const capabilities = [
 <template>
   <div class="p-40">
     <div
-      class="uppercase italic text-[135px] leading-8.5 text-[#ff8f8f] w-1/2 mb-10"
+      class="uppercase italic text-[135px] leading-8.5 text-[#ff8f8f] w-1/2 mb-40"
     >
       Our Capabilities
     </div>

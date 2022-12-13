@@ -22,6 +22,7 @@ module.exports = {
         }
       },
       fontSize: {
+        "11xl": '200px',
         "10xl": "182px",
         "5.5xl": '54px',
         "3.5xl": '34px',
@@ -31,6 +32,7 @@ module.exports = {
       lineHeight: {
         48: '189px',
         8.5: '135px',
+        20.5: '82px'
       }
     },
   },

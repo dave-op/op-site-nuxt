@@ -18,7 +18,8 @@ module.exports = {
           1: '#ff8f8f'
         },
         gray: {
-          1: '#a8a8a8'
+          1: '#a8a8a8',
+          2: '#1f1a2f'
         }
       },
       fontSize: {

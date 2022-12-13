@@ -10,7 +10,9 @@
       <div class="flex justify-between mb-20">
         <div>
           <ul>
-            <li class="uppercase italic text-2xl mb-4">Careers</li>
+            <li class="uppercase italic text-2xl mb-4">
+              <NuxtLink to="/jobs">Careers</NuxtLink>
+            </li>
             <li class="uppercase italic text-2xl mb-4">
               Awwwards
               <font-awesome-icon icon="fa-solid fa-up-right-from-square" />

@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css',
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '~/assets/Gilory/stylesheet.css'
   ],
   postcss: {
     plugins: {

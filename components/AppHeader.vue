@@ -1,6 +1,8 @@
 <template>
   <div class="flex justify-between items-center px-10 py-[60px]">
-    <img src="~/assets/images/logo.svg" alt="" style="width: 64px; height: 64px" />
+    <NuxtLink to="/">
+      <img src="~/assets/images/logo.svg" alt="" style="width: 64px; height: 64px" />
+    </NuxtLink>
     <div class="flex gap-6 items-center">
       <div class="italic uppercase" v-for="(menu, index) in menus" :key="index">
         <NuxtLink :to="menu.url">{{ menu.name }}</NuxtLink>

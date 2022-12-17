@@ -1,7 +1,7 @@
 <script setup>
 const journals = [
   {
-    src: "e-learning",
+    src: "e-learning-journal",
     title: "E-Learning",
     description: "Developing of an client-first e-Learning platform",
   },
@@ -25,32 +25,34 @@ const images = Object.fromEntries(
 </script>
 
 <template>
-  <div class="px-[140px]">
-    <div class="font-bold mb-10 text-2xl">Our studio thoughts</div>
-    <div
-      class="text-10xl leading-48 text-[#ff8f8f] uppercase italic w-2/4 mb-10"
-    >
-      Our Journal
-    </div>
-    <div class="grid grid-cols-3 gap-10">
-      <div v-for="(journal, index) in journals" :key="index">
-        <div class="mb-10">
-          <img
-            :src="images[journal.src]"
-            alt=""
-            style="height: 710px; width: 477px"
-          />
-        </div>
-        <div class="text-[#ff8f8f] text-2xl uppercase italic mb-5">
-          {{ journal.title }}
-        </div>
-        <div class="text-3.5xl font-medium leading-tight">
-          {{ journal.description }}
+  <div class="flex justify-center">
+    <div class="w-4/5">
+      <div class="font-bold mb-10 text-2xl font-kumbh">Our studio thoughts</div>
+      <div
+        class="text-6xl md:text-8xl lg:text-9xl xl:text-10xl lg:leading-48 text-[#ff8f8f] uppercase italic xl:w-2/4 mb-10"
+      >
+        Our Journal
+      </div>
+      <div class="grid xl:grid-cols-3 gap-10">
+        <div v-for="(journal, index) in journals" :key="index">
+          <div class="mb-10">
+            <img
+              :src="images[journal.src]"
+              alt=""
+              style="width: 100%;"
+            />
+          </div>
+          <div class="text-[#ff8f8f] text-2xl uppercase italic mb-5">
+            {{ journal.title }}
+          </div>
+          <div class="text-3.5xl font-medium leading-tight">
+            {{ journal.description }}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="py-40 flex justify-center items-center">
-      <Button>Read More</Button>
+      <div class="py-20 lg:py-40 flex justify-center items-center">
+        <Button>Read More</Button>
+      </div>
     </div>
   </div>
 </template>

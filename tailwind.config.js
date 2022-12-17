@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -10,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'kumbh': ['Kumbh Sans', 'sans-serif', ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         purple: {
           1: '#130f20'

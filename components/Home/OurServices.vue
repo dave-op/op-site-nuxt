@@ -29,26 +29,28 @@ const services = [
 </script>
 
 <template>
-  <div class="px-[180px]">
-    <div
-      class="text-10xl leading-48 text-[#ff8f8f] uppercase italic w-3/4 py-40"
-    >
-      Our Services
-    </div>
-    <div>
+  <div class="flex justify-center">
+    <div class="w-4/5">
       <div
-        v-for="(service, index) in services"
-        :key="index"
-        class="mb-20 flex justify-between"
+        class="text-6xl md:text-8xl lg:text-9xl xl:text-10xl lg:leading-48 text-[#ff8f8f] uppercase italic xl:w-3/4 py-20 xl:py-40"
       >
-        <div class="text-7xl uppercase italic">{{ service.title }}</div>
-        <div class="text-2xl font-medium max-w-[486px]">
-          {{ service.description }}
-        </div>
+        Our Services
       </div>
-      <div class="flex justify-end">
-        <div class="max-w-[486px] w-full">
-          <Button>Find Out More</Button>
+      <div>
+        <div
+          v-for="(service, index) in services"
+          :key="index"
+          class="mb-20 flex flex-col xl:flex-row justify-between xl:space-x-10"
+        >
+          <div class="text-4xl sm:text-7xl uppercase italic mb-4">{{ service.title }}</div>
+          <div class="sm:text-2xl font-medium max-w-[486px]">
+            {{ service.description }}
+          </div>
+        </div>
+        <div class="flex xl:justify-end">
+          <div class="max-w-[486px] w-full">
+            <Button>Find Out More</Button>
+          </div>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@
       >
         <NuxtLink :to="menu.url">{{ menu.name }}</NuxtLink>
       </div>
-      <Button :class="buttonColor">
+      <Button class="bg-pink-1">
         LET'S TALK <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
       </Button>
     </div>

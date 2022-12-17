@@ -25,30 +25,34 @@ const capabilities = [
 </script>
 
 <template>
-  <div class="p-40">
-    <div
-      class="uppercase italic text-[135px] leading-8.5 text-[#ff8f8f] w-1/2 mb-40"
-    >
-      Our Capabilities
-    </div>
-    <div class="px-20">
+  <div class="flex justify-center">
+    <div class="w-4/5 pt-20 lg:pt-40">
       <div
-        v-for="(capability, index) in capabilities"
-        :key="index"
-        class="flex mb-20"
+        class="uppercase italic text-6xl md:text-8xl lg:text-[135px] lg:leading-8.5 text-[#ff8f8f] lg:w-1/2 mb-20 lg:mb-40 max-md:break-all"
       >
-        <div class="mr-20 uppercase italic text-7xl mb-20">
-          {{ (index + 1).toLocaleString("en-US", { minimumIntegerDigits: 2 }) }}
-        </div>
-        <div class="w-3/4">
-          <div class="uppercase italic text-7xl mb-10">
-            {{ capability.name }}
+        Our Capabilities
+      </div>
+      <div class="lg:px-20">
+        <div
+          v-for="(capability, index) in capabilities"
+          :key="index"
+          class="flex mb-20 flex-col lg:flex-row"
+        >
+          <div class="mr-20 uppercase italic text-6xl lg:text-7xl mb-10 md:mb-20">
+            {{
+              (index + 1).toLocaleString("en-US", { minimumIntegerDigits: 2 })
+            }}
           </div>
-          <div class="text-2xl font-medium mb-5">
-            {{ capability.description }}
-          </div>
-          <div class="text-2xl font-medium">
-            {{ capability.shortDescription }}
+          <div class="">
+            <div class="uppercase italic text-5xl md:text-6xl lg:text-7xl mb-10 max-md:break-all">
+              {{ capability.name }}
+            </div>
+            <div class="md:text-2xl font-medium mb-5">
+              {{ capability.description }}
+            </div>
+            <div class="md:text-2xl font-medium">
+              {{ capability.shortDescription }}
+            </div>
           </div>
         </div>
       </div>

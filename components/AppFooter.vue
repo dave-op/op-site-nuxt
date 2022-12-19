@@ -2,7 +2,7 @@
   <div>
     <div class="bg-pink-1 py-[140px] text-center overflow-hidden">
       <div
-        class="uppercase italic text-10xl mb-10 whitespace-nowrap my-text w-[200%] flex"
+        class="uppercase italic text-7xl md:text-9xl lg:text-10xl mb-10 whitespace-nowrap my-text w-[200%] flex"
       >
         <p ref="myText">&nbsp;Build Something Together</p>
         <p>&nbsp; Build Something Together</p>
@@ -98,7 +98,7 @@ import { gsap } from "gsap";
 const myText = ref(null);
 
 onMounted(() => {
-  const itemWidth = myText.value.scrollWidth + 42;
+  const itemWidth = myText.value.scrollWidth + myText.value.clientHeight / 4;
 
   gsap.to(".my-text", {
     duration: 7,

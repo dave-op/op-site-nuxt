@@ -42,14 +42,18 @@ const services = [
           :key="index"
           class="mb-20 flex flex-col xl:flex-row justify-between xl:space-x-10"
         >
-          <div class="text-4xl sm:text-7xl uppercase italic mb-4">{{ service.title }}</div>
-          <div class="sm:text-2xl font-medium max-w-[486px]">
+          <div class="text-4xl sm:text-7xl uppercase italic mb-4">
+            {{ service.title }}
+          </div>
+          <div class="sm:text-2xl font-medium max-w-[486px] font-kumbh">
             {{ service.description }}
           </div>
         </div>
         <div class="flex xl:justify-end">
           <div class="max-w-[486px] w-full">
-            <Button>Find Out More</Button>
+            <Button>
+              <NuxtLink to="/services">Find Out More</NuxtLink>
+            </Button>
           </div>
         </div>
       </div>

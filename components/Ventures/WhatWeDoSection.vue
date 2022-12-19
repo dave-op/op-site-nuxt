@@ -15,7 +15,7 @@
           {{ (index + 1).toLocaleString("en-US", { minimumIntegerDigits: 2 }) }}
         </div>
         <div class="text-4xl md:text-5xl lg:text-6xl uppercase italic mb-10">{{ data.name }}</div>
-        <div class="md:text-2xl">{{ data.description }}</div>
+        <div class="md:text-2xl font-kumbh">{{ data.description }}</div>
       </div>
     </div>
   </div>

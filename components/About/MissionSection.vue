@@ -2,7 +2,7 @@
   <div class="h-[500px] bg-gray-1"></div>
   <div class="bg-white text-[#130f20] p-10 md:p-20 lg:p-40">
     <div class="uppercase italic text-6xl md:text-8xl lg:text-[135px] lg:leading-8.5 text-[#ff8f8f] lg:w-1/2 mb-10">Our Mission</div>
-    <div class="grid xl:grid-cols-2 gap-20">
+    <div class="grid xl:grid-cols-2 gap-20 font-kumbh">
       <div>
         <div class="text-3xl md:text-5.5xl font-medium leading-tight mb-10">
           Original People designs and  builds digital products, from ideation through to execution.

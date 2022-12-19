@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center px-10 py-[60px]">
+  <div class="flex justify-between items-center px-10 py-10 lg:py-[60px]">
     <NuxtLink to="/">
       <img
         src="~/assets/images/logo.svg"

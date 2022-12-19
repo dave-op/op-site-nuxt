@@ -8,7 +8,7 @@
       </div>
       <div class="px-6 lg:px-16 grid xl:grid-cols-2 gap-20 relative -top-[30px] md:-top-[50px] lg:-top-[70px] xl:-top-[80px]">
         <img src="~/assets/images/home/e-learning.png" alt="" />
-        <div class="pt-10 lg:pt-20">
+        <div class="pt-10 lg:pt-20 font-kumbh">
           <div class="text-3xl xl:text-5.5xl xl:max-2xl:text-4xl xl:leading-tight font-medium mb-10">
             Let’s build your startup, together.
           </div>

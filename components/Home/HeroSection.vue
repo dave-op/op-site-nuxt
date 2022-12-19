@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-10 md:pt-20 lg:pt-40 flex justify-center overflow-hidden">
+  <div class="py-10 md:py-20 lg:py-40 flex justify-center overflow-hidden">
     <div class="w-3/4">
       <div class="font-bold mb-4 lg:text-2xl font-kumbh">
         A digital Product Studio Based In Soho, London

@@ -1,14 +1,6 @@
 <template>
   <div class="bg-white text-black">
-    <div class="p-10 md:p-20 lg:p-30 xl:p-48 bg-pink-1 text-white">
-      <div class="text-3xl md:text-5xl lg:text-6xl leading-tight font-bold mb-20">
-        “Working with Original people., has helped us deliver creatively on
-        multiple projects through the years. Their work has always been
-        fantastic, and we hope to work with them in the future.”
-      </div>
-      <div class="text-2xl font-bold">Kasper Vardrup</div>
-      <div class="text-lg">Founder and Partner at GLPG</div>
-    </div>
+    <ProjectStatement />
     <div class="p-10 md:p-20 lg:p-30 xl:p-48">
       <div
         class="uppercase italic text-6xl md:text-8xl lg:text-[135px] lg:leading-8.5 text-[#ff8f8f] w-3/4 mb-20"
@@ -17,8 +9,14 @@
       </div>
       <div class="grid xl:grid-cols-2 gap-20">
         <div v-for="(benefit, index) in benefits" :key="index">
-          <div class="text-5xl md:text-6xl lg:text-7xl uppercase italic mb-10 max-sm:break-all">{{ benefit.name }}</div>
-          <div class="text-2xl font-medium">{{ benefit.description }}</div>
+          <div
+            class="text-5xl md:text-6xl lg:text-7xl uppercase italic mb-10 max-sm:break-all"
+          >
+            {{ benefit.name }}
+          </div>
+          <div class="text-2xl font-medium font-kumbh">
+            {{ benefit.description }}
+          </div>
         </div>
       </div>
     </div>

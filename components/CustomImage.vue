@@ -5,7 +5,7 @@
       <div class="text-[#ff8f8f] text-5xl sm:text-6xl xl:text-7xl uppercase italic mb-10 break-all">
         {{ name }}
       </div>
-      <div class="text-2xl sm:text-3xl xl:text-3.5xl sm:leading-tight font-medium">
+      <div class="text-2xl sm:text-3xl xl:text-3.5xl sm:leading-tight font-medium font-kumbh">
         {{ description }}
       </div>
     </div>

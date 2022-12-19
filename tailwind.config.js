@@ -24,7 +24,10 @@ module.exports = {
         },
         gray: {
           1: '#a8a8a8',
-          2: '#1f1a2f'
+          2: '#1f1a2f',
+          3: '#ebebeb',
+          4: '#acacac',
+          5: '#888888'
         }
       },
       fontSize: {

@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="bg-pink-1 py-[140px] text-center overflow-hidden">
-      <div class="uppercase italic text-10xl mb-10 whitespace-nowrap my-text w-[200%] flex">
+      <div
+        class="uppercase italic text-10xl mb-10 whitespace-nowrap my-text w-[200%] flex"
+      >
         <p ref="myText">&nbsp;Build Something Together</p>
         <p>&nbsp; Build Something Together</p>
       </div>
-      <Button class="border">Contact Us</Button>
+      <Button class="border">
+        <NuxtLink to="/contact">Contact Us</NuxtLink>
+      </Button>
     </div>
     <div class="flex justify-center">
       <div class="w-4/5 py-24">
@@ -41,7 +45,7 @@
             <div class="uppercase italic text-4.5xl mb-10 leading-none">
               New Projects
             </div>
-            <ul>
+            <ul class="font-kumbh">
               <li class="text-lg font-medium underline">020 7206 2694</li>
               <li class="text-lg font-medium underline">
                 hello@weareoriginalpeople.com
@@ -53,7 +57,7 @@
             <div class="uppercase italic text-4.5xl mb-10 leading-none">
               London
             </div>
-            <ul>
+            <ul class="font-kumbh">
               <li class="text-lg font-medium">Original People,</li>
               <li class="text-lg font-medium">01Zero-One,</li>
               <li class="text-lg font-medium">Hopkins Street,</li>
@@ -65,7 +69,7 @@
             <div class="uppercase italic text-4.5xl mb-10 leading-none">
               Nottingham
             </div>
-            <ul>
+            <ul class="font-kumbh">
               <li class="text-lg font-medium">Original People,</li>
               <li class="text-lg font-medium">01Zero-One,</li>
               <li class="text-lg font-medium">Hopkins Street,</li>
@@ -74,7 +78,7 @@
             </ul>
           </div>
         </div>
-        <div class="flex justify-between flex-col lg:flex-row">
+        <div class="flex justify-between flex-col lg:flex-row font-kumbh">
           <div class="flex flex-col sm:flex-row">
             <div class="mr-10 text-lg mb-4">
               © Original People, 2021. All rights reserved.

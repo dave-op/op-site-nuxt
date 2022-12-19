@@ -45,7 +45,7 @@ const images = Object.fromEntries(
           <div class="text-[#ff8f8f] text-2xl uppercase italic mb-5">
             {{ journal.title }}
           </div>
-          <div class="text-3.5xl font-medium leading-tight">
+          <div class="text-3.5xl font-medium leading-tight font-kumbh">
             {{ journal.description }}
           </div>
         </div>

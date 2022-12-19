@@ -47,10 +47,10 @@ const capabilities = [
             <div class="uppercase italic text-5xl md:text-6xl lg:text-7xl mb-10 max-md:break-all">
               {{ capability.name }}
             </div>
-            <div class="md:text-2xl font-medium mb-5">
+            <div class="md:text-2xl font-medium mb-5 font-kumbh">
               {{ capability.description }}
             </div>
-            <div class="md:text-2xl font-medium">
+            <div class="md:text-2xl font-medium font-kumbh">
               {{ capability.shortDescription }}
             </div>
           </div>

@@ -7,7 +7,7 @@
         Meet the founders
       </div>
       <div
-        class="text-2xl lg:text-3.5xl lg:leading-tight font-medium lg:w-1/2 mb-20"
+        class="text-2xl lg:text-3.5xl lg:leading-tight font-medium lg:w-1/2 mb-20 font-kumbh"
       >
         10+ years of success is down to our team of creative thinkers and
         makers.

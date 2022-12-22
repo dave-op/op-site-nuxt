@@ -1,12 +1,20 @@
 <template>
   <div>
-    <img :src="images[url]" alt="" style="width: 100%;" />
-    <div class="px-4 sm:px-10 relative -top-[25px] sm:-top-[30px] xl:-top-[40px]">
-      <div class="text-[#ff8f8f] text-5xl sm:text-6xl xl:text-7xl uppercase italic mb-10 break-all">
-        {{ name }}
-      </div>
-      <div class="text-2xl sm:text-3xl xl:text-3.5xl sm:leading-tight font-medium font-kumbh">
-        {{ description }}
+    <img :src="images[url]" alt="" style="width: 100%" class="transition hover:grayscale duration-500" />
+    <div
+      class="px-4 sm:px-10 relative -top-[25px] sm:-top-[30px] xl:-top-[40px]"
+    >
+      <div :class="customPadding">
+        <div
+          class="text-[#ff8f8f] text-5xl sm:text-6xl xl:text-7xl uppercase italic mb-14 max-2xl:break-all"
+        >
+          {{ name }}
+        </div>
+        <div
+          class="text-2xl sm:text-3xl xl:text-3.5xl xl:leading-normal font-medium font-kumbh"
+        >
+          {{ description }}
+        </div>
       </div>
     </div>
   </div>
@@ -21,11 +29,11 @@ const images = Object.fromEntries(
 );
 
 export default {
-  props: ["url", "name", "description"],
+  props: ["url", "name", "description", "customPadding"],
   data() {
     return {
-      images
-    }
-  }
+      images,
+    };
+  },
 };
 </script>

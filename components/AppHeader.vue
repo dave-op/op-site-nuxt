@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center px-10 py-10 lg:py-[60px]">
+  <div class="flex justify-between items-center px-20 py-8 lg:py-[60px]">
     <NuxtLink to="/">
       <img
         src="~/assets/images/logo.svg"
@@ -7,12 +7,17 @@
         style="width: 64px; height: 64px"
       />
     </NuxtLink>
-    <div class="flex gap-6 items-center max-lg:hidden">
+    <div class="flex gap-10 items-center max-lg:hidden">
       <div class="italic uppercase" v-for="(menu, index) in menus" :key="index">
         <NuxtLink :to="menu.url">{{ menu.name }}</NuxtLink>
       </div>
       <Button :class="buttonColor">
-        LET'S TALK <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
+        LET'S TALK
+        <font-awesome-icon
+          icon="fa-solid fa-arrow-right-long"
+          size="2xs"
+          class="ml-4"
+        />
       </Button>
     </div>
     <div @click="showMenu = true" class="lg:hidden">

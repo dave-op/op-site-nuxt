@@ -7,16 +7,16 @@
         OP Ventures
       </div>
       <div class="px-6 lg:px-16 grid xl:grid-cols-2 gap-20 relative -top-[30px] md:-top-[50px] lg:-top-[70px] xl:-top-[80px]">
-        <img src="~/assets/images/home/e-learning.png" alt="" />
-        <div class="pt-10 lg:pt-20 font-kumbh">
-          <div class="text-3xl xl:text-5.5xl xl:max-2xl:text-4xl xl:leading-tight font-medium mb-10">
+        <img src="~/assets/images/home/e-learning.png" alt=""  class="transition hover:grayscale duration-500" />
+        <div class="pt-10 lg:pt-20">
+          <div class="text-3xl xl:text-5.5xl xl:max-2xl:text-4xl xl:leading-tight font-medium mb-10 font-kumbh">
             Let’s build your startup, together.
           </div>
-          <div class="text-3xl xl:text-5.5xl xl:max-2xl:text-4xl xl:leading-tight font-medium mb-20">
+          <div class="text-3xl xl:text-5.5xl xl:max-2xl:text-4xl xl:leading-tight font-medium mb-20 font-kumbh">
             Original People Ventures partners with founders to fund, build and
             scale tech startups we believe in.
           </div>
-          <Button>Find Out More</Button>
+          <Button class="py-6 px-12">Find Out More</Button>
         </div>
       </div>
     </div>

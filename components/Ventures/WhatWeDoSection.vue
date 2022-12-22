@@ -1,20 +1,33 @@
 <template>
-  <div class="p-10 md:p-20 lg:p-40 bg-purple-1 text-white md:text-center flex md:justify-center">
-    <div class="xl:w-2/3 flex flex-col gap-10 md:gap-20">
-      <div class="uppercase italic text-4xl md:text-5xl lg:text-6xl text-[#ff8f8f]">
+  <div
+    class="p-10 md:p-20 lg:p-40 bg-purple-1 text-white md:text-center flex md:justify-center"
+  >
+    <div class="xl:w-2/3 flex flex-col gap-10 md:gap-40">
+      <div
+        class="uppercase italic text-4xl md:text-5xl lg:text-6xl lg:leading-tight text-[#ff8f8f]"
+      >
         Help Startups get off the ground
       </div>
-      <div class="uppercase italic  text-4xl md:text-5xl lg:text-6xl text-[#ff8f8f]">
+      <div
+        class="uppercase italic text-4xl md:text-5xl lg:text-6xl lg:leading-tight text-[#ff8f8f]"
+      >
         Develop digital products for part
       </div>
-      <div class="uppercase italic  text-4xl md:text-5xl lg:text-6xl text-[#ff8f8f]">
+      <div
+        class="uppercase italic text-4xl md:text-5xl lg:text-6xl lg:leading-tight text-[#ff8f8f]"
+      >
         Dedicated strategy, technical, and design
       </div>
       <div v-for="(data, index) in DATA" :key="index">
-        <div class="text-7xl md:text-8xl lg:text-10xl uppercase italic mb-4">
+        <div
+          class="text-7xl md:text-8xl lg:text-10xl uppercase italic mb-4 text-[#130f20]"
+          style="-webkit-text-stroke: white; -webkit-text-stroke-width: thin"
+        >
           {{ (index + 1).toLocaleString("en-US", { minimumIntegerDigits: 2 }) }}
         </div>
-        <div class="text-4xl md:text-5xl lg:text-6xl uppercase italic mb-10">{{ data.name }}</div>
+        <div class="text-4xl md:text-5xl lg:text-6xl lg:leading-tight uppercase italic mb-10">
+          {{ data.name }}
+        </div>
         <div class="md:text-2xl font-kumbh">{{ data.description }}</div>
       </div>
     </div>

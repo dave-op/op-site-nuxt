@@ -4,13 +4,13 @@
     :style="{ backgroundImage: `url(${image})` }"
   >
     <div
-      class="bg-black/60 px-10 md:px-20 lg:px-40 py-60 md:py-80"
+      class="bg-black/60 px-10 md:px-20 lg:px-80 py-60 md:py-80"
     >
-      <div class="md:text-2xl font-bold font-kumbh mb-4 text-[#ff8f8f]">
+      <div class="md:text-2xl font-bold font-kumbh mb-10 text-[#ff8f8f]">
         Previous Blog
       </div>
       <div
-        class="text-4xl md:text-6xl lg:text-7xl uppercase italic lg:w-2/3 mb-20 text-white"
+        class="text-4xl md:text-6xl lg:text-7xl lg:leading-tight uppercase italic lg:w-3/4 mb-20 text-white"
       >
         How to re-imagine the learning experience
       </div>

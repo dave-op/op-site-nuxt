@@ -51,7 +51,7 @@ const services = [
         </div>
         <div class="flex xl:justify-end">
           <div class="max-w-[486px] w-full">
-            <Button>
+            <Button class="py-6 px-12">
               <NuxtLink to="/services">Find Out More</NuxtLink>
             </Button>
           </div>

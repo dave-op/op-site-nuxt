@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-full py-4 bg-pink-1 italic px-8 text-2xl uppercase text-white"
+    class="rounded-full py-6 bg-pink-1 italic px-12 text-2xl uppercase text-white"
     @mouseover="onEnter"
     @mouseleave="onLeave"
   >

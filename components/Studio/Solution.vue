@@ -3,7 +3,7 @@
     <div class="bg-gray-1 h-[800px] w-full"></div>
     <div class="grid xl:grid-cols-2 gap-20 p-10 md:p-20 lg:p-40">
       <div
-        class="text-4xl md:text-6xl 2xl:text-7xl text-[#ff8f8f] uppercase italic"
+        class="text-4xl md:text-6xl 2xl:text-7xl text-[#ff8f8f] uppercase italic 2xl:leading-tight"
       >
         Our Solution
       </div>

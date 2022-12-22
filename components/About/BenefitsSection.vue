@@ -7,10 +7,10 @@
       >
         Why partner with us?
       </div>
-      <div class="grid xl:grid-cols-2 gap-20">
+      <div class="grid xl:grid-cols-2 gap-32">
         <div v-for="(benefit, index) in benefits" :key="index">
           <div
-            class="text-5xl md:text-6xl lg:text-7xl uppercase italic mb-10 max-sm:break-all"
+            class="text-5xl md:text-6xl lg:text-7xl uppercase italic mb-10 max-sm:break-all lg:leading-tight"
           >
             {{ benefit.name }}
           </div>

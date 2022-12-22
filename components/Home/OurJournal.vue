@@ -39,7 +39,8 @@ const images = Object.fromEntries(
             <img
               :src="images[journal.src]"
               alt=""
-              style="width: 100%;"
+              style="width: 100%"
+              class="transition hover:grayscale duration-500"
             />
           </div>
           <div class="text-[#ff8f8f] text-2xl uppercase italic mb-5">
@@ -51,7 +52,7 @@ const images = Object.fromEntries(
         </div>
       </div>
       <div class="py-20 lg:py-40 flex justify-center items-center">
-        <Button>Read More</Button>
+        <Button class="py-6 px-16">Read More</Button>
       </div>
     </div>
   </div>

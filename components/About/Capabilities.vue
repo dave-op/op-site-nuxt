@@ -26,25 +26,30 @@ const capabilities = [
 
 <template>
   <div class="flex justify-center">
-    <div class="w-4/5 pt-20 lg:pt-40">
+    <div class="w-4/5 py-20 lg:py-40">
       <div
         class="uppercase italic text-6xl md:text-8xl lg:text-[135px] lg:leading-8.5 text-[#ff8f8f] lg:w-1/2 mb-20 lg:mb-40 max-md:break-all"
       >
         Our Capabilities
       </div>
-      <div class="lg:px-20">
+      <div class="xl:px-40 2xl:px-60">
         <div
           v-for="(capability, index) in capabilities"
           :key="index"
           class="flex mb-20 flex-col lg:flex-row"
         >
-          <div class="mr-20 uppercase italic text-6xl lg:text-7xl mb-10 md:mb-20">
+          <div
+            class="mr-20 uppercase italic text-6xl lg:text-7xl mb-10 md:mb-20 text-[#130f20]"
+            style="-webkit-text-stroke: white; -webkit-text-stroke-width: thin"
+          >
             {{
               (index + 1).toLocaleString("en-US", { minimumIntegerDigits: 2 })
             }}
           </div>
           <div class="">
-            <div class="uppercase italic text-5xl md:text-6xl lg:text-7xl mb-10 max-md:break-all">
+            <div
+              class="uppercase italic text-5xl md:text-6xl lg:text-7xl mb-10 max-md:break-all"
+            >
               {{ capability.name }}
             </div>
             <div class="md:text-2xl font-medium mb-5 font-kumbh">

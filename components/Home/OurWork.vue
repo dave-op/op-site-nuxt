@@ -20,7 +20,9 @@
                         cross-platform iOS and Android mobile app."
             class="mb-10 sm:mb-14 md:mb-22 lg:mb-32"
           />
-          <Button><NuxtLink to="/work">Our Work</NuxtLink></Button>
+          <Button class="px-0">
+            <NuxtLink to="/work" class="px-16">Our Work</NuxtLink>
+          </Button>
         </div>
         <CustomImage
           class="lg:pt-32"

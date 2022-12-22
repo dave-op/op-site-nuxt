@@ -4,6 +4,7 @@
     <AboutHeroSection />
     <AboutMissionSection />
     <AboutCapabilities />
+    <StudioStatement />
     <AboutBenefitsSection />
     <AboutOwnersSection />
     <AppFooter />

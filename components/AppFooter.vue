@@ -134,19 +134,33 @@ onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
   }
 
-  ScrollTrigger.defaults({
-    toggleActions: "restart pause resume pause",
-    scroller: ".my-text-box",
-  });
-
-  gsap.to(".my-text-box", {
-    scrollTrigger: {
-      trigger: ".my-text-box",
-      toggleActions: "restart pause reverse pause",
+  ScrollTrigger.create({
+    trigger: ".my-text-box",
+    start: "top bottom",
+    end: "bottom top",
+    markers: false,
+    onEnter: () => {
+      gsap.to(".my-text-box", {
+        backgroundColor: "#ff8f8f",
+        delay: 1,
+        duration: 3,
+      });
     },
-    duration: 1,
-    backgroundColor: "#FF8F8F",
-    ease: "none",
+    onLeave: () =>
+      gsap.to(".my-text-box", {
+        backgroundColor: "#130f20",
+        duration: 3,
+      }),
+    onLeaveBack: () =>
+      gsap.to(".my-text-box", {
+        backgroundColor: "#130f20",
+        duration: 3,
+      }),
+    onEnterBack: () =>
+      gsap.to(".my-text-box", {
+        backgroundColor: "#ff8f8f",
+        duration: 3,
+      }),
   });
 });
 </script>

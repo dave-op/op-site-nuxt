@@ -42,12 +42,12 @@ module.exports = {
         }
       },
       fontSize: {
-        "11xl": '200px',
-        "10xl": "182px",
-        "5.5xl": '54px',
-        "3.5xl": '34px',
-        "4.5xl": '42px',
-        "4.8xl": '45px'
+        "11xl": '12.5rem',
+        "10xl": "11.375rem",
+        "5.5xl": '3.375rem',
+        "3.5xl": '2.125rem',
+        "4.5xl": '2.625rem',
+        "4.8xl": '2.8125rem'
       },
       lineHeight: {
         48: '189px',

@@ -4,11 +4,20 @@
       <div class="font-bold mb-4 lg:text-2xl font-kumbh">
         A digital Product Studio Based In Soho, London
       </div>
-      <div class="flex md:justify-between md:items-center flex-col md:flex-row">
-        <div class="text-2xl md:text-4xl lg:text-7xl text-[#ff8f8f] uppercase italic lg:leading-tight mb-14">
+      <div
+        class="flex justify-between items-center flex-col md:flex-row gap-20 max-md:mb-20"
+      >
+        <div
+          class="text-2xl md:text-4xl lg:text-7xl text-[#ff8f8f] uppercase italic lg:leading-tight md:mb-14"
+        >
           Transforming Ideas Into Incredible Digital Products
         </div>
-        <div class="relative w-fit font-kumbh">
+        <div class="relative w-fit font-kumbh cta-div">
+          <Button
+            class="h-[160px] w-[160px] flex justify-center items-center absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 px-1 py-0 cta-button"
+          >
+            <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
+          </Button>
           <svg width="200" height="200" viewBox="0 0 400 400" class="wrapper">
             <path
               id="multiarc"
@@ -26,11 +35,6 @@
               </textPath>
             </text>
           </svg>
-          <Button
-            class="h-[56px] w-[56px] flex justify-center items-center absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 px-1 py-0"
-          >
-            <font-awesome-icon icon="fa-solid fa-arrow-right-long" size="2xs" />
-          </Button>
         </div>
       </div>
       <Button class="py-6 px-14">OUR STUDIO</Button>
@@ -56,5 +60,46 @@ onMounted(() => {
     repeat: -1,
     duration: 6,
   });
+
+  const cta_div = document.querySelector(".cta-div");
+  let original_div = cta_div.getBoundingClientRect();
+
+  cta_div.addEventListener("mousemove", moveCircle);
+  cta_div.addEventListener("mouseleave", leaveCircle);
+  window.addEventListener('resize', resizeWindow);
+
+  function resizeWindow(e) {
+    original_div = cta_div.getBoundingClientRect()
+  }
+
+  function leaveCircle(e) {
+    gsap.to(".wrapper, .cta-button", {
+      duration: 0.3,
+      x: 0,
+      y: 0,
+      scale: 1,
+    });
+  }
+
+  function moveCircle(e) {
+    callParallax(e);
+  }
+
+  function callParallax(e) {
+    parallaxIt(e, ".wrapper", 80);
+    parallaxIt(e, ".cta-button", 80);
+  }
+
+  function parallaxIt(e, target, movement) {
+    var relX = e.pageX - original_div.left;
+    var relY = e.pageY - original_div.top;
+
+    gsap.to(target, {
+      duration: 0.3,
+      x: ((relX - 100) / 200) * movement,
+      y: ((relY - 100) / 200) * movement,
+      ease: "power2",
+    });
+  }
 });
 </script>

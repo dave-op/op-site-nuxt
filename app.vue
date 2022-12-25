@@ -1,7 +1,7 @@
 <template>
   <div class="cursor-none">
     <NuxtPage />
-    <div class="cursor absolute top-0 left-0 pointer-events-none mix-blend-exclusion z-20">
+    <div class="cursor absolute top-0 left-0 pointer-events-none mix-blend-exclusion z-[60]">
       <svg width="60" height="60">
         <circle
           cx="30"

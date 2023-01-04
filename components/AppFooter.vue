@@ -142,24 +142,23 @@ onMounted(() => {
     onEnter: () => {
       gsap.to(".my-text-box", {
         backgroundColor: "#ff8f8f",
-        delay: 1,
-        duration: 3,
+        duration: 1,
       });
     },
     onLeave: () =>
       gsap.to(".my-text-box", {
         backgroundColor: "#130f20",
-        duration: 3,
+        duration: 1,
       }),
     onLeaveBack: () =>
       gsap.to(".my-text-box", {
         backgroundColor: "#130f20",
-        duration: 3,
+        duration: 1,
       }),
     onEnterBack: () =>
       gsap.to(".my-text-box", {
         backgroundColor: "#ff8f8f",
-        duration: 3,
+        duration: 1,
       }),
   });
 });

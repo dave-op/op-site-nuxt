@@ -12,29 +12,38 @@
         >
           Transforming Ideas Into Incredible Digital Products
         </div>
-        <div class="relative w-fit font-kumbh cta-div">
+        <div class="cta-div">
           <Button
-            class="h-[160px] w-[160px] flex justify-center items-center absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 px-1 py-0 cta-button"
+            class="w-[160px] h-[160px] flex justify-center items-center cta-button"
           >
             <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
-          </Button>
-          <svg width="200" height="200" viewBox="0 0 400 400" class="wrapper">
-            <path
-              id="multiarc"
-              d="M 100, 200 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0"
-              fill="transparent"
-            />
-            <text
-              font-size="30"
-              font-weight="400"
-              fill="white"
-              textLength="624"
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
-              <textPath id="multiarcText" href="#multiarc" class="text">
-                START NEW PROJECT &#8226; START NEW PROJECT &#8226;
-              </textPath>
-            </text>
-          </svg>
+              <svg
+                width="200"
+                height="200"
+                viewBox="0 0 400 400"
+                class="wrapper"
+              >
+                <path
+                  id="multiarc"
+                  d="M 100, 200 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0"
+                  fill="transparent"
+                />
+                <text
+                  font-size="30"
+                  font-weight="400"
+                  fill="white"
+                  textLength="624"
+                >
+                  <textPath id="multiarcText" href="#multiarc" class="text">
+                    START NEW PROJECT &#8226; START NEW PROJECT &#8226;
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </Button>
         </div>
       </div>
       <Button class="py-6 px-14">OUR STUDIO</Button>
@@ -66,10 +75,10 @@ onMounted(() => {
 
   cta_div.addEventListener("mousemove", moveCircle);
   cta_div.addEventListener("mouseleave", leaveCircle);
-  window.addEventListener('resize', resizeWindow);
+  window.addEventListener("resize", resizeWindow);
 
   function resizeWindow(e) {
-    original_div = cta_div.getBoundingClientRect()
+    original_div = cta_div.getBoundingClientRect();
   }
 
   function leaveCircle(e) {
@@ -86,7 +95,6 @@ onMounted(() => {
   }
 
   function callParallax(e) {
-    parallaxIt(e, ".wrapper", 80);
     parallaxIt(e, ".cta-button", 80);
   }
 

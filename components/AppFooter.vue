@@ -140,6 +140,7 @@ onMounted(() => {
     end: "bottom top",
     markers: false,
     onEnter: () => {
+      console.log('debug ----------- ', document.body.style)
       gsap.to(".my-text-box", {
         backgroundColor: "#ff8f8f",
         duration: 1,
